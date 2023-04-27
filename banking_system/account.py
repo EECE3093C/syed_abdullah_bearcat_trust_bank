@@ -10,6 +10,9 @@ class Account:
         self.account_number = account_number
         self.account_holder_name = account_holder_name
         self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
      
     def get_balance(self):
         """Return the current balance of the account."""
