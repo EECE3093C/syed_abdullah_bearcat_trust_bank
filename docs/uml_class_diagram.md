@@ -20,26 +20,14 @@ classDiagram
       +display()
   }
   class SavingsAcccount {
-      +int account_number
-      +str account_holder_name
-      +float balance
       +float interest_rate
       +__init__(account_number, account_holder_name, balance, interest_rate)
-      +deposit(amount)
-      +withdraw(amount)
-      +getbalance() balance
       +display()
       +calculate_interest()
   }
   class CheckingAccount {
-      +int account_number
-      +str account_holder_name
-      +float balance
       +int overdraft_limit
       +__init__(account_number, account_holder_name, balance, overdraft_limit)
-      +deposit(amount)
-      +withdraw(amount)
-      +getbalance() balance
       +display()
   }
   Account <|-- SavingsAcccount
