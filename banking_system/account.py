@@ -1,11 +1,6 @@
 class Account:
     """A class representing a bank account."""
 
-    # todo: Add the following methods:
-    #       __init__
-    #       deposit
-    #       withdraw
-
     def __init__(self, account_number, account_holder_name, balance):
         self.account_number = account_number
         self.account_holder_name = account_holder_name
@@ -33,9 +28,6 @@ class Account:
 class SavingsAccount(Account):
     """A class representing a savings account."""
 
-    # todo: Add the following method(s):
-    #       __init__
-
     def __init__(self, account_number, account_holder_name, balance, interest_rate = 0.0):
         super().__init__(account_number, account_holder_name, balance)
         self.interest_rate = interest_rate
@@ -52,9 +44,6 @@ class SavingsAccount(Account):
 
 class CheckingAccount(Account):
     """A class representing a checking account."""
-
-    # todo: Add the following methods:
-    #       __init__
 
     def __init__(self, account_number, account_holder_name, balance, overdraft_limit = 0):
         super().__init__(account_number, account_holder_name, balance)
