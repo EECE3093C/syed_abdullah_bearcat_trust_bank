@@ -6,9 +6,6 @@ class Bank:
     def __init__(self):
         self.accounts = []
 
-    # todo: Add the following method(s):
-    #       create_account
-
     def create_account(self, account_type, account_number, account_holder_name, balance, **kwargs):
         """
         Creates a new account with given account type, account number, account holder name, balance, and interest rate 
